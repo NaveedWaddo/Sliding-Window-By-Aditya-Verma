@@ -48,7 +48,7 @@ vector<long long> printFirstNegativeInteger(long long int A[],
                 if(neg.empty()) ans.push_back(0);
                 else{
                     ans.push_back(neg.front());
-                    if(A[i]<0) 
+                    if(A[i]==neg.front()) 
                         neg.pop();
                 }
                 i++;
