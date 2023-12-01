@@ -1,5 +1,7 @@
 //Link : https://leetcode.com/problems/minimum-window-substring/description/
 
+// Optimale Approach : Sliding Window
+
 class Solution{
 public:
     string minWindow(string s, string t){
@@ -27,11 +29,6 @@ public:
             }
 
             if(count == 0){
-                if(mini > j-i+1){
-                    mini=j-i+1;
-                    res = s.substr(i,mini);
-                }
-
                 while(i<=j && count==0){
                     if(mp.find(s[i]) != mp.end()){
                         mp[s[i]]++;
