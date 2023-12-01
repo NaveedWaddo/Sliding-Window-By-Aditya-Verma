@@ -29,7 +29,7 @@ public:
             }
 
             if(count == 0){
-                while(i<=j && count==0){
+                while(count==0){
                     if(mp.find(s[i]) != mp.end()){
                         mp[s[i]]++;
                         if(mp[s[i]] == 1){
